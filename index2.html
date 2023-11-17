@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+<style>
+*{
+margin: 0px;
+padding: 0px;
+box-sizing:border-box
+}
+
+body{
+background-image:url(pexels-binyamin-mellish-186077.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+width:100%;
+height:100vh;
+}
+.know{
+display:flex;
+width: 30em;
+height:20em;
+margin-top: 80px;
+margin-left: 550px;
+font-weight: bolder;
+}
+
+.know input{
+border-radius:30px;
+text-align: center;
+margin-bottom: 20px;
+
+}
+.fake{
+margin-top: 200px;
+display: block;
+margin-left: 150px;;
+font-size: medium;
+color: aqua;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+
+ 
+    <div class="know">
+        <form action="" method="post" onsubmit="return validate()" name="vali">
+        <label>First name</label>
+    <input type="text" name="fn" id="fn" class="form-control" placeholder="enter first name">
+    <label>other name</label>
+    <input type="text" name="ot" id="ot" class="form-control" placeholder="enter other names">
+<label>E-mail address</label>
+<input type="e-mail" name="Email" id="Email" class="form-control" placeholder="enter your e-mail">
+<label>phone number</label>
+<input type="number" name="nn" id="nn" class="form-control" placeholder="enter your phone number">
+<input type="submit" id="submit" class="form-control btn-primary" name="submit" value="SUBMIT">  
+</form>
+    </div>
+
+<div class="fake">
+    <h1>You can contact us via:</h1>
+<h2>WhatsApp:08084861678</h2>
+   <h3>e-mail:olayinkolusanya@gmail.com</h3>
+
+
+
+
+
+</div>
+
+
+
+
+<script>
+    function validate(){
+    let x= document.forms["vali"]["fn"].value;
+    let p= document.forms["vali"]["ot"].value;
+    let y= document.forms["vali"]["Email"].value;
+    let g= document.forms["vali"]["nn"].value;
+    
+    if((x=="")|| (p=="") ||(y=="")|| (g=="")){
+    alert("field cannot be empty");
+    return false
+    
+    
+    }
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+        </script>
+      
+
+
+
+
+
+
+</body>
+</html>
